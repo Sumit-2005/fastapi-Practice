@@ -1,0 +1,18 @@
+$kind: http-request
+description: ""
+url: "{{URL}}vote"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"post_id\": 10,\r
+
+    \    \"dir\": 1\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
+order: 4493104369468337
