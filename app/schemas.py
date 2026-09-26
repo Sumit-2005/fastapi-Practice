@@ -22,7 +22,7 @@ class UserOut(BaseModel):
 class Post(PostBase):
     id: int
     created_at: datetime
-    user_id: int 
+    owner_id: int 
     user: UserOut
 
     class Config:
