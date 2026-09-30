@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:8000/seller/4
+method: DELETE
+order: 4173065211735044

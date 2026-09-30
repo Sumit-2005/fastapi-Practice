@@ -1,14 +1,16 @@
 $kind: http-request
 description: ""
-url: http://127.0.0.1:8000/users
+url: "{{URL}}users"
 method: POST
 body:
   type: json
   content: "{\r
 
-    \    \"email\": \"sumit@gmail.com\",\r
+    \    \"email\":  \"yuvraj@gmail.com\",\r
 
-    \    \"password\": \"password\"\r
+    \    \"password\": \"password123\"\r
 
     }"
+auth:
+  type: noauth
 order: 4268401552238543

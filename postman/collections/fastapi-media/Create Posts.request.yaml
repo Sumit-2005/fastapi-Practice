@@ -1,14 +1,23 @@
 $kind: http-request
 description: ""
-url: http://127.0.0.1:8000/posts
+url: "{{URL}}posts"
 method: POST
+headers:
+  - key: Authorization
+    value: ""
+    disabled: true
+    description: ""
 body:
   type: json
   content: "{\r
 
-    \    \"title\": \"Top beaches in Daman\",\r
+    \    \"title\": \"Top Colleges in Gurugram\",\r
 
-    \    \"content\": \"Moti Daman Beach\"\r
+    \    \"content\": \"WCTM\"\r
 
     }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
 order: 596245768423385

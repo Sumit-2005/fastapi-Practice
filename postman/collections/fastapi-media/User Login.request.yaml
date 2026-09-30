@@ -7,7 +7,7 @@ body:
   content:
     - type: text
       key: username
-      value: sumit@gmail.com
+      value: yuvraj@gmail.com
       description: ""
       disabled: false
     - type: text
@@ -17,6 +17,6 @@ body:
       disabled: false
 scripts:
   - type: afterResponse
-    code: "pm.environment.set(\"JWT\", pm.response.json().access_token);\r\n"
+    code: pm.environment.set("JWT", pm.response.json().access_token);
     language: text/javascript
 order: 4487596748005737

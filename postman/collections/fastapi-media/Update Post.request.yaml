@@ -1,14 +1,18 @@
 $kind: http-request
 description: ""
-url: http://127.0.0.1:8000/posts/1
+url: "{{URL}}posts/6"
 method: PUT
 body:
   type: json
   content: "{\r
 
-    \    \"title\": \"My name is Sumit\",\r
+    \        \"title\": \"Top Colleges in Gurugram\",\r
 
-    \    \"content\": \"Hello this is my introduction\"\r
+    \        \"content\": \"World College of Technology and Management\"\r
 
     }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
 order: 3573104551456622

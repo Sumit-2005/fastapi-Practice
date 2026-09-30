@@ -1,5 +1,14 @@
 $kind: http-request
 description: ""
-url: http://127.0.0.1:8000/posts
+url: "{{URL}}posts"
 method: GET
+headers:
+  - key: Authorization
+    value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE3ODk4MDM2NzN9.nwVxWYz_5D50I478ClFZpKc6bDfHj0t2ESH14GWdq6Q
+    disabled: true
+    description: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{JWT}}"
 order: 1789537479495
