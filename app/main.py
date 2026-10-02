@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ["http://localhost:5175"]
+origins = ["https://sumit-social.vercel.app/"]
 
 app.add_middleware(
     CORSMiddleware,
